@@ -6,7 +6,7 @@ Currently for 2 Players only!
 
 ## How to use
 
-Download the [cheat file](GoldenEye%20007%20(U).cht) for use with Project64, or manually add the cheats to your emulator of choice. These are GameShark codes so should be compatible with anything that accepts them. Enable either the 10 point or 15 point cheat before you start your match.
+Download the [cheat file](GoldenEye%20007%20(U).cht) for use with Project64, or manually add the cheats to your emulator of choice. These are GameShark cheats so should be compatible with anything that accepts them. Enable either the 10 point or 15 point cheat before you start your match.
 
 It has also been tested in netplay via the [AQZ Netplay Plugin](https://www.play64.com/netplay-plugin/) for Project64. 
 
@@ -40,7 +40,7 @@ More screenshots [here](Screenshots/).
 
 &#42; skipped in 10 point option
 
-## GameShark Codes Break Down
+## GameShark Cheats Explained
 
 ```
 $10 Points to Win
@@ -84,7 +84,7 @@ $Player 2 Max Ammo
 810AAF46 03E7
 ```
 
-This provides both players with all guns and max ammo for each type. Players won't be able to access these weapons as it will be set by the following cheat. The "All Weapons" cheat is not necessary, but without it on, the player won't have any weapon model on their screen and will be shooting from their hand.
+This provides both players with all guns and max ammo for each type. Players won't be able to access these weapons as it will be set by the following cheat. The "All Weapons" cheat is not necessary, but without it on, the player won't have any weapon model on their screen and will be shooting from their hand instead.
 
 ```
 $10 Points Gun Game - Player 1
@@ -236,16 +236,15 @@ D0079F87 0014
 800AA653 0013
 ```
 
-The cheats are seperate for each player, but they are essentially the same cheat repeated. The code basically looks for how many times the player has killed the other player, and sets their weapon accordingly. Some extra weapon levels are added to the end which are all Golden Gun, this is because it is possible to get negative points from suicide while using explosive weapons.
+The cheats are seperate for each player, but they are essentially the same cheat repeated. The cheat basically looks for how many times the player has killed the other player, and sets their weapon accordingly. Some extra weapon levels are added to the end which are all Golden Gun, this is because it is possible to get negative points from suicide while using explosive weapons.
 
 ## Issues
 
-* The weapon for the player in their own screen is wrong e.g. Golden Gun appears as the Magnum. It will look fine from the other players point of view. The ammo is displayed correctly and is the best visual clue for the player. You can press A or A + Z to swap weapons to try and find a better model, but it won't be right. Playing without the All Weapons cheat is an alternative option, you will just be firing from your hand instead.
+* The weapon for the player in their own screen is wrong e.g. Golden Gun appears as the Magnum. It will look fine from the other player's point of view. The ammo is displayed correctly and is the best visual clue for the player. You can press `A` or `A + Z` to swap weapons to try and find a better model, but it still won't be quite right. Playing without the "All Weapons" cheat is an alternative option, but you will just be firing from your hand instead.
 
-* The cheats only work for Player 1 and 2. Due to my lack of knowledge, I cannot find a way to apply these cheats using total score so it works by counting kills to and by Players 1 and 2. This is also why I have added extra 'levels' to the cheats as suicide detract from the score but do not change the amount of kills. Player 3 or 4 can still join the match, they are just unaffected by the weapon cheats.
+* The cheats only work for Player 1 and 2. Due to my lack of knowledge, I cannot find a way to apply these cheats using total score so it works by counting kills by Players 1 and 2. This is also why I have added extra weapon levels to the cheats as suicide detract from the player's total score but do not change the amount of kills. Player 3 or 4 can still join the match, they are just unaffected by the current cheats.
 
-* The cheats only work for the levels: Temple, Complex, Library, Basement & Stack levels. The levels:
-Caves, Facility, Bunker and Archives need different codes. It is possible, I just haven't bothered to add them.
+* The cheats only work for theses levels: Temple, Complex, Library, Basement and Stack. The other levels require different cheats that I haven't bothered to add.
 
 * Some very minor texture flickering in the menu or start up screen.
 
