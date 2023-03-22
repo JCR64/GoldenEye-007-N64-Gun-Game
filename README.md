@@ -6,11 +6,11 @@ Currently for 2 Players only!
 
 ## How to use
 
-Download the [cheat file](GoldenEye%20007%20(U).cht) for use with Project64, or manually add the cheats to your emulator of choice. These are GameShark cheats so should be compatible with anything that accepts them. Enable either the 10 point or 15 point cheat before you start your match.
+Download the [cheat file](GoldenEye%20007%20(U).cht) for use with Project64, or manually add the cheats to your emulator of choice. These are GameShark cheats so should be compatible with anything that accepts them. 
 
-It has also been tested in netplay via the [AQZ Netplay Plugin](https://www.play64.com/netplay-plugin/) for Project64. 
+Enable either the 10 Point or 15 Point Gun Game cheat before you start your match and away you go!
 
-A cheat file compatible with the 60 fps patched version is [available here](60%20Goldeneye%20007.cht).
+It has also been tested in netplay via the [AQZ Netplay Plugin](https://www.play64.com/netplay-plugin/) for Project64. A cheat file compatible with the 60 fps patched version commonly played online is [available here](60%20Goldeneye%20007.cht).
 
 ## Gameplay
 
@@ -38,7 +38,7 @@ More screenshots [here](Screenshots/).
 14. Throwing Knife
 15. Golden Gun
 
-&#42; skipped in 10 point option
+&#42; skipped in 10 Point Gun Game
 
 ## GameShark Cheats Explained
 
