@@ -1,4 +1,4 @@
-# GoldenEye 007 (N64) Gun Game
+# Gun Game for GoldenEye 007 (N64)
 
 A multiplayer mode for GoldenEye where you start off with a PP7, and with each kill you go up a 'weapon level'. The winner is the first person to get a kill with the final weapon, the Golden Gun.
 
