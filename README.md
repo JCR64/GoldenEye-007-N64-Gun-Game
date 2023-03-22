@@ -1,22 +1,24 @@
 # Gun Game for GoldenEye 007 (N64)
 
-A multiplayer mode for GoldenEye where you start off with a PP7, and with each kill you go up a 'weapon level'. The winner is the first person to get a kill with the final weapon, the Golden Gun.
+A multiplayer mode for GoldenEye where you start off with a PP7, and with each kill you go up a weapon level. The winner is the first person to get a kill with the final weapon, the Golden Gun.
 
 Currently for 2 Players only!
 
 ## How to use
 
-Download the [cheat file](GoldenEye%20007%20(U).cht) and use in Project64, or manually add the cheats to your emulator of choice. These are gameshark codes so should be compatible with anything that accepts them. Enable either the 10 point or 15 point cheat before you start your match.
+Download the [cheat file](GoldenEye%20007%20(U).cht) for use with Project64, or manually add the cheats to your emulator of choice. These are GameShark codes so should be compatible with anything that accepts them. Enable either the 10 point or 15 point cheat before you start your match.
 
-It has also been tested in Netplay via the [AQZ Netplay Plugin](https://www.play64.com/netplay-plugin/) for Project64. 
+It has also been tested in netplay via the [AQZ Netplay Plugin](https://www.play64.com/netplay-plugin/) for Project64. 
 
 A cheat file compatible with the 60 fps patched version is [available here](60%20Goldeneye%20007.cht).
 
 ## Gameplay
 
-Screenshot
+<img src="Screenshots/Gameplay%201.png" width=320 /> <img src="Screenshots/Gameplay%202.png" width=320 />
 
-Video
+<img src="Screenshots/Gameplay%208.png" width=320 /> <img src="Screenshots/Gameplay%209.png" width=320 />
+
+More screenshots [here](Screenshots/).
 
 ## Weapon Levels
 
@@ -38,7 +40,7 @@ Video
 
 &#42; skipped in 10 point option
 
-## Gameshark Codes Break Down
+## GameShark Codes Break Down
 
 ```
 $10 Points to Win
@@ -48,7 +50,7 @@ $15 Points to Win
 8004839F 000F
 ```
 
-Currently there are two options available, first to 10 points or first to 15 points. This sets the score limit and ignores what is set in the multiplayer setup screen, however if a timed game length is chosen that still applies.
+Currently there are two options available, first to 10 points or first to 15 points. This sets the score limit and ignores what is set in the multiplayer setup screen, however if a game length time duration is chosen that still applies.
 
 ```
 $Player 1 All Weapons
@@ -145,7 +147,6 @@ D0079F87 000C
 D0079F87 000D
 800AA653 0013
 
-
 $15 Points Gun Game - Player 1
 D0079F1B 0000
 800A7BD3 0005
@@ -234,8 +235,8 @@ D0079F87 0013
 D0079F87 0014
 800AA653 0013
 ```
-The cheats are seperate for each player, but they are essentially the same cheat repeated. The code basically looks for how many times the player has killed the other player, and sets their weapon accordingly. Some extra 'levels' are added to the end which are all set to Golden Gun, this is because it is possible to get negative points from suicide while using explosive weapons.
 
+The cheats are seperate for each player, but they are essentially the same cheat repeated. The code basically looks for how many times the player has killed the other player, and sets their weapon accordingly. Some extra weapon levels are added to the end which are all Golden Gun, this is because it is possible to get negative points from suicide while using explosive weapons.
 
 ## Issues
 
@@ -248,4 +249,4 @@ Caves, Facility, Bunker and Archives need different codes. It is possible, I jus
 
 * Some very minor texture flickering in the menu or start up screen.
 
-* Project64 sometimes refuses to start with the cheats on. Turning them off and on fixes this.
+* Project64 sometimes refuses to start with the cheats turned on. Turning them off and on fixes this.
