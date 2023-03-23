@@ -6,7 +6,7 @@ Currently for 2 Players only!
 
 ## How to use
 
-Download the [cheat file](GoldenEye%20007%20(U).cht) for use with Project64, or manually add the cheats to your emulator of choice. These are GameShark cheats so should be compatible with anything that accepts them. 
+Download the [cheat file](GoldenEye%20007%20(U).cht) for use with Project64, or manually add the cheats to your emulator of choice. These are GameShark codes so should be compatible with anything that accepts them. 
 
 Enable either the 10 Point or 15 Point Gun Game cheat before you start your match and away you go!
 
@@ -40,7 +40,7 @@ More screenshots [here](Screenshots/).
 
 &#42; skipped in 10 Point Gun Game
 
-## GameShark Cheats Explained
+## GameShark Codes Explained
 
 ```
 $10 Points to Win
@@ -236,7 +236,7 @@ D0079F87 0014
 800AA653 0013
 ```
 
-The cheats are seperate for each player, but they are essentially the same cheat repeated. The cheat basically looks for how many times the player has killed the other player, and sets their weapon accordingly. Some extra weapon levels are added to the end which are all Golden Gun, this is because it is possible to get negative points from suicide while using explosive weapons.
+The cheats are seperate for each player, but they are essentially the same codes repeated. The code basically looks for how many times the player has killed the other player, and sets their weapon accordingly. Some extra weapon levels are added to the end which are all Golden Gun, this is because it is possible to get negative points from suicide while using explosive weapons.
 
 ## Issues
 
@@ -244,7 +244,7 @@ The cheats are seperate for each player, but they are essentially the same cheat
 
 * The cheats only work for Player 1 and 2. Due to my lack of knowledge, I cannot find a way to apply these cheats using total score so it works by counting kills by Players 1 and 2. This is also why I have added extra weapon levels to the cheats as suicide detract from the player's total score but do not change the amount of kills. Player 3 or 4 can still join the match, they are just unaffected by the current cheats.
 
-* The cheats only work for theses levels: Temple, Complex, Library, Basement and Stack. The other levels require different cheats that I haven't bothered to add.
+* The cheats only work for theses levels: Temple, Complex, Library, Basement and Stack. The other levels require different codes that I haven't bothered to add.
 
 * Some very minor texture flickering in the menu or start up screen.
 
