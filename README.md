@@ -84,7 +84,9 @@ $Player 2 Max Ammo
 810AAF46 03E7
 ```
 
-This provides both players with all guns and max ammo for each type. Players won't be able to access these weapons as it will be set by the following cheat. The "All Weapons" cheat is not necessary, but without it on, the player won't have any weapon model on their screen and will be shooting from their hand instead.
+This provides both players with all guns and max ammo for each type. Players won't be able to access these weapons as it will be set by the following cheat. 
+
+*Note: The "All Weapons" cheat is now not included as the wrong weapon models are used which was causing serious graphics issues - unfortunately this means from your POV you will be shooting from your hand.*
 
 ```
 $10 Points Gun Game - Player 1
@@ -240,7 +242,7 @@ The cheats are seperate for each player, but they are essentially the same codes
 
 ## Issues
 
-* The weapon for the player in their own screen is wrong e.g. Golden Gun appears as the Magnum. It will look fine from the other player's point of view. The ammo is displayed correctly and is the best visual clue for the player. You can press `A` or `A + Z` to swap weapons to try and find a better model, but it still won't be quite right. Playing without the "All Weapons" cheat is an alternative option, but you will just be firing from your hand instead.
+* Getting the correct weapon model to display hasn't been possible. It will display correctly from the other players POV but on your screen you will be shooting from your hand. However the ammo is displayed correctly as well the firing sound being correct which can help the player identify their current weapon. The "All Weapons" cheat was a potential work around but didn't work correctly either.
 
 * The cheats only work for Player 1 and 2. Due to my lack of knowledge, I cannot find a way to apply these cheats using total score so it works by counting kills by Players 1 and 2. This is also why I have added extra weapon levels to the cheats as suicide detract from the player's total score but do not change the amount of kills. Player 3 or 4 can still join the match, they are just unaffected by the current cheats.
 
