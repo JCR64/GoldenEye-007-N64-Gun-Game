@@ -144,4 +144,8 @@ If you want to can adjust the Weapon Levels and fully customise it using the abo
 
 * Project64 sometimes won't start a game if cheats are enabled. Opening and closing the cheats menu will fix this.
 
-* It's a lot of codes... in fact so many it does not play smoothly with [Triclon's Nintendo 64 Gameshark Code Injector](https://www.romhacking.net/utilities/1659/)
+* It's a lot of codes... in fact so many it does not play smoothly with [Triclon's Nintendo 64 Gameshark Code Injector](https://www.romhacking.net/utilities/1659/) 
+
+## Console
+
+A reduced version (can only play the maps Temple, Complex, Library, Basement and Stack) intended for console play via a flash cart is available as a [BPS patch](/Console/Gun%20Game%20Patch.bps). This uses Triclon's Nintendo 64 Gameshark Code Injector so it requires you to have an expansion pak to play.
