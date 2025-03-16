@@ -1,6 +1,6 @@
 # Gun Game for GoldenEye 007 (N64)
 
-The classic multiplayer mode in GoldenEye! Each players starts with a PP7 and unlock the next weapon with each kill. The winner is the first person to reach the score limit with the final weapon, the Golden Gun.
+Each players starts with a PP7, each kill moves that player up to the next gun. The winner is the first person to reach the score limit with the final weapon, the Golden Gun.
 
 **Features:**
 - Turn on and off in-game via Cheat Options
