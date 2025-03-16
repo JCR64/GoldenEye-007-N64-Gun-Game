@@ -134,7 +134,7 @@ It is important to note that the codes used for Temple are also used for Complex
 | Taser | 1F |
 | Tank Shells	| 20 |
 
-If you want to can adjust the Weapon Levels and fully customise it using the above IDs!
+The weapon IDs to be paired with the weapon modifier codes.
 
 ## Issues
 
