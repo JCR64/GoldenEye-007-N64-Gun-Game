@@ -1,253 +1,147 @@
 # Gun Game for GoldenEye 007 (N64)
 
-A multiplayer mode for GoldenEye where you start off with a PP7, and with each kill you go up a weapon level. The winner is the first person to get a kill with the final weapon, the Golden Gun.
+The classic multiplayer mode in GoldenEye! Each players starts with a PP7 and unlock the next weapon with each kill. The winner is the first person to reach the score limit with the final weapon, the Golden Gun.
 
-Currently for 2 Players only!
-
-## How to use
-
-Download the [cheat file](GoldenEye%20007%20(U).cht) for use with Project64, or manually add the cheats to your emulator of choice. These are GameShark codes so should be compatible with anything that accepts them. 
-
-Enable either the 10 Point or 15 Point Gun Game cheat before you start your match and away you go!
-
-It has also been tested in netplay via the [AQZ Netplay Plugin](https://www.play64.com/netplay-plugin/) for Project64. A cheat file compatible with the 60 fps patched version commonly played online is [available here](60%20Goldeneye%20007.cht).
+**Features:**
+- Turn on and off in-game via Cheat Options
+- Choose between First to 5, 10 and 20 points
+- Works for all maps!
+- Works for all 4 players!
+- Play Cradle by holding down L in the multiplayer menu
 
 ## Gameplay
 
-<img src="Screenshots/Gameplay%201.png" width=320 /> <img src="Screenshots/Gameplay%202.png" width=320 />
+<img src="Screenshots/screenshot_01.png" width=320 /> <img src="Screenshots/screenshot_02.png" width=320 />
 
-<img src="Screenshots/Gameplay%208.png" width=320 /> <img src="Screenshots/Gameplay%209.png" width=320 />
-
-More screenshots [here](Screenshots/).
+<img src="Screenshots/screenshot_03.png" width=320 /> <img src="Screenshots/screenshot_04.png" width=320 />
 
 ## Weapon Levels
 
-1. PP7 Silenced
-2. DD44*
-3. Magnum
-4. Klobb*
-5. D5K Silenced
-6. KF7
-7. Phantom* 
-8. RCP90
-9. Auto Shotgun
-10. Laser*
-11. Sniper Rifle
-12. Grenade Launcher
-13. Rocket Launcher*
-14. Throwing Knife
-15. Golden Gun
-
-&#42; skipped in 10 Point Gun Game
+| Level | First to 5 points | First to 10 points | First to 20 points |
+| :---: | --- | --- | --- |
+| 1 | PP7 Silenced | PP7 Silenced | PP7 Silenced |
+| 2 | DD44 | DD44 | DD44
+| 3 | Magnum | Magnum | Magnum
+| 4 | Throwing Knife | Klobb | Klobb
+| 5 | Golden Gun | KF7 | ZMG
+| 6 | | Auto Shotgun | D5K
+| 7 | | Sniper Rifle | KF7
+| 8 | | Rocket Launcher | Phantom
+| 9 | | Throwing Knife | AR33
+| 10 | | Golden Gun | RCP90
+| 11 | | | Shotgun
+| 12 | | | Auto Shotgun
+| 13 | | | Laser
+| 14 | | | Sniper Rifle
+| 15 | | | Grenade Launcher
+| 16 | | | Rocket Launcher
+| 17 | | | Tank
+| 18 | | | Golden PP7
+| 19 | | | Throwing Knife
+| 20 | | | Golden Gun
 
 ## GameShark Codes Explained
 
-```
-$10 Points to Win
-8004839F 000A
+I will focus mainly on the codes that make up the actual Gun Game mechanics. The rest are codes to make sure everything is unlocked, the correct settings are used, and change text in the menus e.g. instead of it saying "Unlimited Ammo" in the cheats menu it will say "Gun Game".
 
-$15 Points to Win
-8004839F 000F
-```
+| Cheat | Code |
+| --- | --- |
+| Unlimited Ammo	| 8006965B 0001 |
 
-Currently there are two options available, first to 10 points or first to 15 points. This sets the score limit and ignores what is set in the multiplayer setup screen, however if a game length time duration is chosen that still applies.
+As Gun Game requires max ammo it made sense to base the mode on the Unlimited Ammo cheat. This saves on adding codes to max out players ammo and also allows Gun Game to be something that can be turned on and off via the cheats menu. 
 
-```
-$Player 1 All Weapons
+| Hook | Code |
+| --- | --- |
+| If Unlimited Ammo On | D00696AB 0001 |
 
-800A854C 0007
+Using `D0` gameshark codes we can make sure the codes we want to run only run when the cheat has been turned on. There are many other `D0` codes that will be used.
 
-$Player 1 Max Ammo
+| Hook | Code |
+| --- | --- |
+| If In Game | D002A8C3 000B |
+| If 3 Player | D002B523 0003 |
+| If 4 Player | D002B523 0004 |
+| If First to 5 points| D002B53B 0004 |
+| If First to 10 points | D002B53B 0005 |
+| If First to 20 points | D002B53B 0006 |
+| If P1 Kills xx | D0079F0F 00 xx |
+| If P2 Kills xx | D0079F7F 00 xx |
+| If P3 Kills xx | D0079FEF 00 xx |
+| If P4 Kills xx | D007A05F 00 xx |
 
-810A8496 03E7
-810A849E 03E7
-810A84AA 03E7
-810A84BE 03E7
-810A84C6 03E7
-810A84BA 0062
-810A84C2 03E7
-810A84A2 03E7
+The next codes are to check which level has been loaded, this is important as some codes will be different depending on what level is loaded.
 
-$Player 2 All Weapons
+| Hook | Code |
+| --- | --- | 
+| If Temple	|D002A8F7 0026 |
+| If Complex	| D002A8F7 001F |
+| If Caves	| D002A8F7 0032 | 
+| If Library	| D002A8F7 0030 |
+| If Basement	| D002A8F7 002D |
+| If Stack	| D002A8F7 002E |
+| If Facility	| D002A8F7 0022 |
+| If Bunker	| D002A8F7 001B | 
+| If Archives	| D002A8F7 0018 |
+| If Caverns | D002A8F7 0027 |
+| If Egyptian	| D002A8F7 0020 |
+| If Cradle	| D002A8F7 0029 |
 
-800AAFCC 0007
+Another possible hook for this could be `D002B537 00` which is the map chosen in the Multiplayer Menu but this fails when Random is selected.
 
-$Player 2 Max Ammo
+| Weapon Modifier | Temple |	Bunker | Caverns	| Facility | Archives | Cave | Egyptian |
+| :---: | --- | --- | --- | --- | --- | --- | --- |
+| Player 1 | 800A7C0F 00 | 800B940F 00 | 800C5C0F 00 | 800C840F 00 | 800CD40F 00 | 800D9C0F 00 | 800F2C0F 00 |
+| Player 2  | 800AA68F 00 | 800BBE8F 00 | 800C868F 00 | 800CAE8F 00 | 800CFE8F 00 | 800DC68F 00 | 800F568F 00 |
+| Player 3  | 800AD10F 00 | 800BE90F 00 | 800CB10F 00 | 800CD90F 00 | 800D290F 00 | 800DF10F 00 | 800F810F 00 |
+| Player 4  | 800AFB8F 00 | 800C138F 00 | 800CDB8F 00 | 800D038F 00 | 800D538F 00 | 800E1B8F 00 | 800FAB8F 00 |
 
-810AAF16 03E7
-810AAF1E 03E7
-810AAF22 03E7
-810AAF2A 03E7
-810AAF3A 0062
-810AAF3E 03E7
-810AAF42 03E7
-810AAF46 03E7
-```
+The weapon modifier code is main drive behind the Gun Game mechnanics as it changes what gun the player has in their inventory. However until a player respawns or presses A to switch weapon, their current gun will remain the same.
 
-This provides both players with all guns and max ammo for each type. Players won't be able to access these weapons as it will be set by the following cheat. 
+It is important to note that the codes used for Temple are also used for Complex, Library, Stack and Basement and the code for Archives is also used for Cradle (unavailable unless using cheats).
 
-*Note: The "All Weapons" cheat is now not included as the wrong weapon models are used which was causing serious graphics issues - unfortunately this means from your POV you will be shooting from your hand.*
+| Weapon | ID |
+| --- | :---: |
+| Slapper	| 01 | 
+| Fighting Knife | 02 |
+| Throwing Knife	| 03 | 
+| PP7 |	04 | 
+| PP7 Silenced |	05 |
+| DD44	| 06 | 
+| Klobb| 	07 | 
+| KF7	| 08 |
+| ZMG	| 09 |
+| D5K	| 0A |
+| D5K Silenced | 0B |
+| Phantom	| 0C |
+| AR33 | 0D |
+| RCP90	| 0E | 
+| Shotgun	| 0F |
+| Auto Shotgun	| 10 |
+| Sniper Rifle | 11 |
+| Magnum | 12 |
+| Golden Gun | 13 | 
+| Silver PP7 | 14 |
+| Gold PP7 | 15 |
+| Laser	| 16 |
+| Watch Laser	| 17 |
+| Grenade Launcher | 18 |
+| Rocket Launcher | 19 |
+| Hand Grenades	| 1A | 
+| Timed Mines | 1B |
+| Proximity Mines	| 1C |
+| Remote Mines | 1D |
+| Watch Button | 1E |
+| Taser | 1F |
+| Tank Shells	| 20 |
 
-```
-$10 Points Gun Game - Player 1
-D0079F1B 0000
-800A7BD3 0005
-D0079F1B 0001
-800A7BD3 0012
-D0079F1B 0002
-800A7BD3 000B
-D0079F1B 0003
-800A7BD3 0008
-D0079F1B 0004
-800A7BD3 000E
-D0079F1B 0005
-800A7BD3 0010
-D0079F1B 0006
-800A7BD3 0011
-D0079F1B 0007
-800A7BD3 0018
-D0079F1B 0008
-800A7BD3 0003
-D0079F1B 0009
-800A7BD3 0013
-D0079F1B 000A
-800A7BD3 0013
-D0079F1B 000B
-800A7BD3 0013
-D0079F1B 000C
-800A7BD3 0013
-D0079F1B 000D
-800A7BD3 0013
-
-$10 Points Gun Game - Player 2
-D0079F87 0000
-800AA653 0005
-D0079F87 0001
-800AA653 0012
-D0079F87 0002
-800AA653 000B
-D0079F87 0003
-800AA653 0008
-D0079F87 0004
-800AA653 000E
-D0079F87 0005
-800AA653 0010
-D0079F87 0006
-800AA653 0011
-D0079F87 0007
-800AA653 0018
-D0079F87 0008
-800AA653 0003
-D0079F87 0009
-800AA653 0013
-D0079F87 000A
-800AA653 0013
-D0079F87 000B
-800AA653 0013
-D0079F87 000C
-800AA653 0013
-D0079F87 000D
-800AA653 0013
-
-$15 Points Gun Game - Player 1
-D0079F1B 0000
-800A7BD3 0005
-D0079F1B 0001
-800A7BD3 0006
-D0079F1B 0002
-800A7BD3 0012
-D0079F1B 0003
-800A7BD3 0007
-D0079F1B 0004
-800A7BD3 000B
-D0079F1B 0005
-800A7BD3 0008
-D0079F1B 0006
-800A7BD3 000C
-D0079F1B 0007
-800A7BD3 000E
-D0079F1B 0008
-800A7BD3 0010
-D0079F1B 0009
-800A7BD3 0016
-D0079F1B 000A
-800A7BD3 0011
-D0079F1B 000B
-800A7BD3 0018
-D0079F1B 000C
-800A7BD3 0019
-D0079F1B 000D
-800A7BD3 0003
-D0079F1B 000E
-800A7BD3 0013
-D0079F1B 000F
-800A7BD3 0013
-D0079F1B 0010
-800A7BD3 0013
-D0079F1B 0011
-800A7BD3 0013
-D0079F1B 0012
-800A7BD3 0013
-D0079F1B 0013
-800A7BD3 0013
-D0079F1B 0014
-800A7BD3 0013
-
-$15 Points Gun Game - Player 2
-D0079F87 0000
-800AA653 0005
-D0079F87 0001
-800AA653 0006
-D0079F87 0002
-800AA653 0012
-D0079F87 0003
-800AA653 0007
-D0079F87 0004
-800AA653 000B
-D0079F87 0005
-800AA653 0008
-D0079F87 0006
-800AA653 000C
-D0079F87 0007
-800AA653 000E
-D0079F87 0008
-800AA653 0010
-D0079F87 0009
-800AA653 0016
-D0079F87 000A
-800AA653 0011
-D0079F87 000B
-800AA653 0018
-D0079F87 000C
-800AA653 0019
-D0079F87 000D
-800AA653 0003
-D0079F87 000E
-800AA653 0013
-D0079F87 000F
-800AA653 0013
-D0079F87 0010
-800AA653 0013
-D0079F87 0011
-800AA653 0013
-D0079F87 0012
-800AA653 0013
-D0079F87 0013
-800AA653 0013
-D0079F87 0014
-800AA653 0013
-```
-
-The cheats are seperate for each player, but they are essentially the same codes repeated. The code basically looks for how many times the player has killed the other player, and sets their weapon accordingly. Some extra weapon levels are added to the end which are all Golden Gun, this is because it is possible to get negative points from suicide while using explosive weapons.
+If you want to can adjust the Weapon Levels and fully customise it using the above IDs!
 
 ## Issues
 
-* Getting the correct weapon model to display hasn't been possible. It will display correctly from the other players POV but on your screen you will be shooting from your hand. However the ammo is displayed correctly as well the firing sound being correct which can help the player identify their current weapon. The "All Weapons" cheat was a potential work around but didn't work correctly either.
+* The weapon change isn't automatic, players will need to press A to go to their next weapon. If they die they will respawn with the correct weapon.
 
-* The cheats only work for Player 1 and 2. Due to my lack of knowledge, I cannot find a way to apply these cheats using total score so it works by counting kills by Players 1 and 2. This is also why I have added extra weapon levels to the cheats as suicide detract from the player's total score but do not change the amount of kills. Player 3 or 4 can still join the match, they are just unaffected by the current cheats.
+* It doesn't take suicides (-1 point) into consideration so you won't go down a gun level if you die from your own explosion, instead you'll need to get extra kills with the Golden Gun to make up the difference.
 
-* The cheats only work for theses levels: Temple, Complex, Library, Basement and Stack. The other levels require different codes that I haven't bothered to add.
+* Project64 sometimes won't start a game if cheats are enabled. Opening and closing the cheats menu will fix this.
 
-* Some very minor texture flickering in the menu or start up screen.
-
-* Project64 sometimes refuses to start with the cheats turned on. Turning them off and on fixes this.
+* It's a lot of codes... in fact so many it does not play smoothly with [Triclon's Nintendo 64 Gameshark Code Injector](https://www.romhacking.net/utilities/1659/)
